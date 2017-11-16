@@ -1,0 +1,413 @@
+INSERT INTO users (
+	firstname, 
+	lastname, 
+	picture, 
+	email, 
+	age, 
+	description) 
+VALUES (
+	'Peggy',
+	'Wonleg',
+	'uploads/Meerkatz.jpg',
+	'peggy.wonleg@aol.com',
+	27,
+	'I love going here with my husband!'
+	),
+
+  	(
+	'Willie',
+	'Stroker',
+	'uploads/chilis.jpg',
+	'thestrokster@gmail.com',
+	49,
+    	'I love going here to chilis out'
+	);
+	
+	(
+	'Dixie',
+	'Normous',
+	'uploads/Fuzzys.jpg',
+	'dixie.normous@gmail.com',
+	45,
+    	'I taco bout Fuzzys all the time'
+	);
+	
+	(
+	'Justin',
+	'Sider',
+	'uploads/willies.jpg',
+	'sider@gmail.com',
+	34,
+    	'My friends and I love Willies'
+	);
+	
+	(
+	'Richard',
+	'Harden',
+	'uploads/19th hole.jpg',
+	'HardentheRichard@yahoo.com',
+	41,
+    	'After 18 holes, it's nice to finish off at the 19th'
+	);
+-----------------------------------------
+
+INSERT INTO restaurants (
+	name, 
+	picture, 
+	address, 
+	email, 
+	biography, 
+	description) 
+VALUES (
+	'Meerkatz',
+	'uploads/meerkatz.jpg',
+	'7600 S. Perkins Rd. Stillwater, OK 74074',
+	'meerkatz@gmail.com',
+	'The best club in Oklahoma with the coldest beer and hottest women',
+	'Gentleman's club'
+	);
+	
+	'Chilis',
+	'uploads/chilis.jpg',
+	'1111 S. Hall of Fame Rd. Stillwater, OK 74074',
+	'chili@gmail.com',
+	'Feelin Hott? Come get Chilis',
+	'Restaurant'
+	);
+	
+	'Fuzzys',
+	'uploads/fuzzys.jpg',
+	'1243 S. Washington Rd. Stillwater, OK 74074',
+	'fuzzy@gmail.com',
+	'The only Fuzzy taco in stillwater that you won't regret the next day',
+	'Restaurant'
+	);
+	
+	'Willies',
+	'uploads/willies.jpg',
+	'1245 S. Washington Rd. Stillwater, OK 74074',
+	'willies@aol.com',
+	'Come out for a night with the guys at Willies',
+	'Bar'
+	);
+	
+	'The Nineteenth Hole',
+	'uploads/19th Hole.jpg',
+	'711 S. Main Rd. Stillwater, OK 74074',
+	'19th.hole@gmail.com',
+	'When you get tired on the back 9, come in for one more hole',
+	'Sports Bar'
+	);
+-------------------------------------------
+INSERT INTO patronage(
+	user_id, 
+	restaurant_id) 
+VALUES (
+    '1',
+    '1'
+	);
+	
+	(
+    '2',
+    '2'
+	);
+	
+	(
+    '3',
+    '3'
+	);
+	
+	(
+    '4',
+    '4'
+	);
+	
+	(
+    '5',
+    '5'
+	);
+-------------------------------------------
+INSERT INTO menu_categories(
+	restaurant_id,
+	name, 
+	picture, 
+	description) 
+VALUES (
+    '1',
+    'Meerkatz',
+    NULL,
+    'Cold beer'
+	);
+	
+	(
+    '2',
+    'Chilis',
+    'uploads/chilis menu.jpg',
+    'Per customer request, now serving more than just chili.'
+	);
+	
+	(
+    '3',
+    'Fuzzys',
+    'uploads/fuzzys menu.jpg',
+    'Per customer request, now serving tacos without fuzz.'
+	);
+	
+	(
+    '4',
+    'Willies',
+    NULL,
+    'Per customer request, now allowing ladies'
+	);
+	
+	(
+    '5',
+    'The Nineteenth Hole',
+    NULL,
+    'Still only serving golfers with stamina'
+	);
+-------------------------------------------
+INSERT INTO menu_items(
+	menucat_id,
+	name, 
+	picture, 
+	description,
+	price) 
+VALUES (
+	'Meerkatz Beer',
+	'Budlight',
+	'uploads/budlight.jpg',
+	'It's like Budweiser, but lighter',
+	'$3.25',
+	);
+
+	(
+	'Chili's Food',
+	'Chili',
+	'uploads/chili.jpg',
+	'We lied. We still only have chili.',
+	'$78.37',
+	);
+
+	(
+	'Fuzzy's Tacos',
+	'The Fuzzy Taco',
+	'uploads/fuzzy taco.jpg',
+	'We lied. We only have taco's that are fuzzy',
+	'$11.00 + Regret',
+	);
+
+	(
+	'Willies Drinks',
+	'Dirty Man-tini',
+	'uploads/martini.jpg',
+	'Every man needs another dirty Man-tini',
+	'$30.34',
+	);
+
+	(
+	'Nineteenth Hole Drinks',
+	'Red-Headed Slut',
+	'uploads/shot.jpg',
+	'After a full day of 18 holes, there is nothing better than a Red-Headed Slut',
+	'$20.85',
+	);
+-------------------------------------------
+INSERT INTO ingredients(
+	ingredient_description)
+VALUES (
+	'Hops'
+	);
+
+	(
+	'Water'
+	);
+
+	(
+	'Yeast'
+	);
+
+	(
+	'Light'
+	);
+
+	(
+	'Beef'
+	);
+
+	(
+	'Tomatoes'
+	);
+
+	(
+	'Xanax'
+	);
+
+	(
+	'Jalapenoes'
+	);
+
+	(
+	'Lettuce'
+	);
+
+	(
+	'Unknown Cheese'
+	);
+
+	(
+	'Pocket Lint'
+	);
+
+	(
+	'Regret'
+	);
+
+	(
+	'Vodka'
+	);
+
+	(
+	'Vermouth'
+	);
+
+	(
+	'Men'
+	);
+
+	(
+	'Olive Juice'
+	);
+
+	(
+	'Dirt'
+	);
+
+	(
+	'Craneberry'
+	);
+
+	(
+	'Crown Royal'
+	);
+
+	(
+	'Peach Schnapps'
+	);
+
+	(
+	'Daddy Issues'
+	);
+--------------------------------------------
+INSERT INTO recipes(
+	menuitem_id,
+	ingredient_id) 
+VALUES (
+	'1',
+	'1'
+	);
+
+	(
+	'1',
+	'2'
+	);
+
+	(
+	'1',
+	'3'
+	);
+
+	(
+	'1',
+	'4'
+	);
+
+	(
+	'2',
+	'5'
+	);
+
+	(
+	'2',
+	'6'
+	);
+
+	(
+	'2',
+	'7'
+	);
+
+	(
+	'2',
+	'8'
+	);
+
+	(
+	'3',
+	'5'
+	);
+
+	(
+	'3',
+	'9'
+	);
+
+	(
+	'3',
+	'10'
+	);
+
+	(
+	'3',
+	'11'
+	);
+
+	(
+	'3',
+	'12'
+	);
+
+	(
+	'4',
+	'13'
+	);
+
+	(
+	'4',
+	'14'
+	);
+
+	(
+	'4',
+	'15'
+	);
+
+	(
+	'4',
+	'16'
+	);
+
+	(
+	'4',
+	'17'
+	);
+
+	(
+	'5',
+	'18'
+	);
+
+	(
+	'5',
+	'19'
+	);
+
+	(
+	'5',
+	'20'
+	);
+
+	(
+	'5',
+	'21'
+	);
